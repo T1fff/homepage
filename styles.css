@@ -53,7 +53,7 @@ nav > a:hover {
   display: flex;
   width: 70%;
   margin: 0 auto;
-  padding: 12rem 0;
+  padding: 12rem 0 5rem;
 }
 
 .my-info {
@@ -122,10 +122,31 @@ nav > a:hover {
   margin-top: 1.5rem;
   font-size: 1.2rem;
   line-height: 2rem;
+  text-align: justify;
+}
+
+/* My projects */
+.display-proyects{
+    display: flex;
+    justify-content: space-between;
+}
+
+.hover11 figure img {
+	opacity: 1;
+	-webkit-transition: .5s ease-in-out;
+	transition: .5s ease-in-out;
+    width: 300px;
+    height: 144px;
+    border-radius: 10px;
+    border-bottom: 1px solid var(--light-pink);
+    
+}
+.hover11 figure:hover img {
+	opacity: .4;
 }
 
 /* Secondary */
-.secondary {
+.secondary, .my-projects {
   width: 70%;
   margin: 0 auto;
   text-align: center;
@@ -135,12 +156,13 @@ nav > a:hover {
   font-size: 2rem;
   text-shadow: 2px 2px 4px var(--shadow);
   margin-bottom: 1.2rem;
+  font-weight: 600;
 }
 
 .skills {
   display: flex;
   flex-direction: column;
-  margin-bottom: 3rem;
+  margin: 3rem 0;
 }
 
 .list {
@@ -163,7 +185,7 @@ nav > a:hover {
 }
 
 .experience{
-    margin-bottom: 6rem;
+    margin-bottom: 5rem;
 }
 
 .experience > p,ul {
@@ -291,6 +313,20 @@ nav > a:hover {
   .hobbies{
     margin-top: 1rem;
   }
+
+  .display-proyects{
+    flex-direction: column;
+    width: 75%;
+    height: auto;
+    }
+
+  .display-proyects > *{
+        margin-bottom: 1rem;
+   }
+
+   .my-projects__title {
+    padding-left: 5.5rem;
+   }
 }
 
 @media screen and (min-width: 721px) and (max-width: 1000px) {
