@@ -20,17 +20,41 @@ body {
     font-family: 'Poppins', sans-serif;
     background: var(--dark-purple);
     color: var(--white);
-}
-
-main {
     display: flex;
+    flex-direction: column;
 }
 
+/* Nav */
+nav{
+    width: 70%;
+    margin: 0 auto;
+    text-align: end;
+    position: absolute;
+    top: 50px;
+    left: 220px;
+}
+
+nav > a {
+    text-decoration: none;
+    color: var(--white);
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 0 2rem;
+    transition: 0.2s ease;
+}
+
+nav > a:hover{
+    color: var(--light-pink);
+    transform: scale(1.05);
+}
+
+
+/* Main */
 .container {
     display: flex;
     width: 70%;
     margin: 0 auto;
-    padding: 10rem 0;
+    padding: 12rem 0;
 }
 
 .my-info{
@@ -104,6 +128,48 @@ main {
     line-height: 2rem;
 }
 
+/* Secondary */
+.secondary{
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.subtitle{
+    font-size: 2rem;
+    text-shadow: 2px 2px 4px var(--shadow);
+}
+
+.skills{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3rem;
+}
+
+.list{
+    margin: 1rem auto;
+    display: flex;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.list > ul {
+    list-style: none;
+}
+
+.list > ul > li {
+    padding: 0.5rem;
+}
+
+.list__1{
+    margin-right: 5rem;
+}
+
+
+
+
+/* Media query */
+
 @media screen and (max-width:720px) {
     .my-info__title1 {
         font-size: 2.2rem;
@@ -130,22 +196,26 @@ main {
 
 @media screen and (max-width:1000px) {
     .container{
+        width: 100%;
         flex-direction: column;
         text-align: center;
-        padding: 8rem auto;
     }
+    
     .contact-info{
         margin: 0 auto;
     }
 
     .my-photo{
-        width: 70%;
         margin: 3rem auto;
         
     }
 
     .description{
         font-size: 1.7rem;
+    }
+
+    nav{
+        visibility: hidden;
     }
 
 }
