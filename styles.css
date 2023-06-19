@@ -28,12 +28,17 @@ main {
 
 .container {
     display: flex;
+    width: 70%;
     margin: 0 auto;
-    padding: 15rem 0;
+    padding: 10rem 0;
+}
+
+.my-info{
+    width: 100%;
 }
 
 .my-info > * {
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
 }
 
 .my-info__title1 {
@@ -62,23 +67,99 @@ main {
 .contact > a {
     margin-top: 0.5rem;
     font-size: 2rem;
+    
+}
+.contact > a > svg {
+    transition: 0.2s ease;
+}
+
+.contact > a > svg:hover {
+    transition: 0.2s ease;
+    fill: var(--purple);
+}
+
+
+/* Avatar */
+
+.my-photo{
+    width:50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.avatar {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: 3px solid var(--light-pink);
+    margin: 0 auto;
+    transition: 0.7s ease;
+    
+}
+
+.avatar:hover{
+    transform: scale(1.05);
+}
+
+.description{
+    margin-top: 1.5rem;
+    font-size: 1.2rem;
+    line-height: 2rem;
 }
 
 @media screen and (max-width:720px) {
     .my-info__title1 {
-        font-size: 2rem;
+        font-size: 2.2rem;
     }
     
     .my-info__title2{
-        font-size: 2.4rem;
+        font-size: 2.6rem;
     }
     
     .my-info__title3{
-        font-size: 1.7rem;
+        font-size: 1.5rem;
     }
 
     .contact > a {
         font-size: 1.5rem;
     }
+
+    .avatar {
+        width: 200px;
+        height: 200px;
+        
+    }
 }
+
+@media screen and (max-width:1000px) {
+    .container{
+        flex-direction: column;
+        text-align: center;
+        padding: 8rem auto;
+    }
+    .contact-info{
+        margin: 0 auto;
+    }
+
+    .my-photo{
+        width: 70%;
+        margin: 3rem auto;
+        
+    }
+
+    .description{
+        font-size: 1.7rem;
+    }
+
+}
+
+@media screen and (min-width: 721px) and (max-width: 1000px) {
+    .avatar {
+        width: 250px;
+        height: 250px;
+        
+    }
+}
+
 
