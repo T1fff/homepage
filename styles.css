@@ -1,231 +1,249 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700;900&display=swap");
 
 /* General Styles */
 :root {
-    --dark-purple: #2D033B;
-    --purple: #810CA8;
-    --light-purple:#C147E9;
-    --light-pink:#E5B8F4;
-    --white:#f5f5f5;
-    --shadow:#f31b56;
-  }
+  --dark-purple: #2d033b;
+  --purple: #810ca8;
+  --light-purple: #c147e9;
+  --light-pink: #e5b8f4;
+  --white: #f5f5f5;
+  --shadow: #f31b56;
+}
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
-    background: var(--dark-purple);
-    color: var(--white);
-    display: flex;
-    flex-direction: column;
+  font-family: "Poppins", sans-serif;
+  background: var(--dark-purple);
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
 }
 
 /* Nav */
-nav{
-    width: 70%;
-    margin: 0 auto;
-    text-align: end;
-    position: absolute;
-    top: 50px;
-    left: 220px;
+nav {
+  width: 70%;
+  margin: 0 auto;
+  text-align: end;
+  position: absolute;
+  top: 50px;
+  left: 220px;
 }
 
 nav > a {
-    text-decoration: none;
-    color: var(--white);
-    font-size: 1.2rem;
-    font-weight: 600;
-    padding: 0 2rem;
-    transition: 0.2s ease;
+  text-decoration: none;
+  color: var(--white);
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 0 2rem;
+  transition: 0.2s ease;
 }
 
-nav > a:hover{
-    color: var(--light-pink);
-    transform: scale(1.05);
+nav > a:hover {
+  color: var(--light-pink);
+  transform: scale(1.05);
 }
-
 
 /* Main */
 .container {
-    display: flex;
-    width: 70%;
-    margin: 0 auto;
-    padding: 12rem 0;
+  display: flex;
+  width: 70%;
+  margin: 0 auto;
+  padding: 12rem 0;
 }
 
-.my-info{
-    width: 100%;
+.my-info {
+  width: 100%;
 }
 
 .my-info__title1 {
-    font-size: 3rem;
-    text-shadow: 2px 2px 4px var(--shadow);
+  font-size: 3rem;
+  text-shadow: 2px 2px 4px var(--shadow);
 }
 
-.my-info__title2{
-    font-size: 3.4rem;
-    text-shadow: 2px 2px 4px #8f0cbb;
+.my-info__title2 {
+  font-size: 3.4rem;
+  text-shadow: 2px 2px 4px #8f0cbb;
 }
 
-.my-info__title3{
-    font-size: 2.7rem;
-    font-weight: 500;
-    color: #f5f5f58e;
+.my-info__title3 {
+  font-size: 2.7rem;
+  font-weight: 500;
+  color: #f5f5f58e;
 }
 
-.contact-info{
-    display: flex;
-    justify-content: space-between;
-    width: 12rem;
-    padding-top: 1rem;
+.contact-info {
+  display: flex;
+  justify-content: space-between;
+  width: 12rem;
+  padding-top: 1rem;
 }
 
 .contact > a {
-    margin-top: 0.5rem;
-    font-size: 2rem;
-    
+  margin-top: 0.5rem;
+  font-size: 2rem;
 }
 .contact > a > svg {
-    transition: 0.2s ease;
+  transition: 0.2s ease;
 }
 
 .contact > a > svg:hover {
-    transition: 0.2s ease;
-    fill: var(--purple);
+  transition: 0.2s ease;
+  fill: var(--purple);
 }
-
 
 /* Avatar */
 
-.my-photo{
-    width:50%;
-    display: flex;
-    flex-direction: column;
+.my-photo {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
 }
 
 .avatar {
-    border-radius: 50%;
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    border: 3px solid var(--light-pink);
-    margin: 0 auto;
-    transition: 0.7s ease;
-    
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border: 3px solid var(--light-pink);
+  margin: 0 auto;
+  transition: 0.7s ease;
 }
 
-.avatar:hover{
-    transform: scale(1.05);
+.avatar:hover {
+  transform: scale(1.05);
 }
 
-.description{
-    margin-top: 1.5rem;
-    font-size: 1.2rem;
-    line-height: 2rem;
+.description {
+  margin-top: 1.5rem;
+  font-size: 1.2rem;
+  line-height: 2rem;
 }
 
 /* Secondary */
-.secondary{
-    width: 70%;
-    margin: 0 auto;
-    text-align: center;
+.secondary {
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
 }
 
-.subtitle{
-    font-size: 2rem;
-    text-shadow: 2px 2px 4px var(--shadow);
+.subtitle {
+  font-size: 2rem;
+  text-shadow: 2px 2px 4px var(--shadow);
 }
 
-.skills{
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 3rem;
+.skills {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3rem;
 }
 
-.list{
-    margin: 1rem auto;
-    display: flex;
-    font-size: 1.3rem;
-    font-weight: 500;
+.list {
+  margin: 1rem auto;
+  display: flex;
+  font-size: 1.3rem;
+  font-weight: 500;
 }
 
 .list > ul {
-    list-style: none;
+  list-style: none;
 }
 
 .list > ul > li {
-    padding: 0.5rem;
+  padding: 0.5rem;
 }
 
-.list__1{
-    margin-right: 5rem;
+.list__1 {
+  margin-right: 5rem;
 }
 
+.experience{
+    margin-bottom: 6rem;
+}
 
+.experience > p,ul {
+  text-align: justify;
+}
 
+.experience__title {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.experience__years {
+  color: #f5f5f565;
+  font-size: 0.9rem;
+}
+
+.experience__description {
+  margin-top: 1rem;
+}
+
+.experience__details {
+  font-size: 1.1rem;
+  padding: 0.3rem;
+}
 
 /* Media query */
 
-@media screen and (max-width:720px) {
-    .my-info__title1 {
-        font-size: 2.2rem;
-    }
-    
-    .my-info__title2{
-        font-size: 2.6rem;
-    }
-    
-    .my-info__title3{
-        font-size: 1.5rem;
-    }
+@media screen and (max-width: 720px) {
+  .my-info__title1 {
+    font-size: 2.2rem;
+  }
 
-    .contact > a {
-        font-size: 1.5rem;
-    }
+  .my-info__title2 {
+    font-size: 2.6rem;
+  }
 
-    .avatar {
-        width: 200px;
-        height: 200px;
-        
-    }
+  .my-info__title3 {
+    font-size: 1.5rem;
+  }
+
+  .contact > a {
+    font-size: 1.5rem;
+  }
+
+  .avatar {
+    width: 200px;
+    height: 200px;
+  }
 }
 
-@media screen and (max-width:1000px) {
-    .container{
-        width: 100%;
-        flex-direction: column;
-        text-align: center;
-    }
-    
-    .contact-info{
-        margin: 0 auto;
-    }
+@media screen and (max-width: 1000px) {
+  .container {
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+  }
 
-    .my-photo{
-        margin: 3rem auto;
-        
-    }
+  .contact-info {
+    margin: 0 auto;
+  }
 
-    .description{
-        font-size: 1.7rem;
-    }
+  .my-photo {
+    margin: 3rem auto;
+  }
 
-    nav{
-        visibility: hidden;
-    }
+  .description {
+    font-size: 1.7rem;
+  }
 
+  nav {
+    visibility: hidden;
+  }
+
+  .list{
+    flex-direction: column;
+  }
 }
 
 @media screen and (min-width: 721px) and (max-width: 1000px) {
-    .avatar {
-        width: 250px;
-        height: 250px;
-        
-    }
+  .avatar {
+    width: 250px;
+    height: 250px;
+  }
 }
-
-
