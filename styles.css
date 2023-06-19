@@ -37,10 +37,6 @@ main {
     width: 100%;
 }
 
-.my-info > * {
-    margin-bottom: 0.5rem;
-}
-
 .my-info__title1 {
     font-size: 3rem;
     text-shadow: 2px 2px 4px var(--shadow);
