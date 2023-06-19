@@ -41,10 +41,11 @@ nav > a {
   font-weight: 600;
   padding: 0 2rem;
   transition: 0.2s ease;
+  z-index: 999;
 }
 
 nav > a:hover {
-  color: var(--light-pink);
+  color: #e2547a;
   transform: scale(1.05);
 }
 
@@ -53,7 +54,7 @@ nav > a:hover {
   display: flex;
   width: 70%;
   margin: 0 auto;
-  padding: 12rem 0 5rem;
+  padding: 13rem 0 5rem;
 }
 
 .my-info {
@@ -93,7 +94,7 @@ nav > a:hover {
 
 .contact > a > svg:hover {
   transition: 0.2s ease;
-  fill: var(--purple);
+  fill: #e2547a;
 }
 
 /* Avatar */
