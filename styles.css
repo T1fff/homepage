@@ -41,10 +41,11 @@ nav > a {
   font-weight: 600;
   padding: 0 2rem;
   transition: 0.2s ease;
+  z-index: 999;
 }
 
 nav > a:hover {
-  color: var(--light-pink);
+  color: #e2547a;
   transform: scale(1.05);
 }
 
@@ -53,7 +54,7 @@ nav > a:hover {
   display: flex;
   width: 70%;
   margin: 0 auto;
-  padding: 12rem 0 5rem;
+  padding: 13rem 0 5rem;
 }
 
 .my-info {
@@ -93,7 +94,7 @@ nav > a:hover {
 
 .contact > a > svg:hover {
   transition: 0.2s ease;
-  fill: var(--purple);
+  fill: #e2547a;
 }
 
 /* Avatar */
@@ -130,6 +131,8 @@ nav > a:hover {
     display: flex;
     justify-content: space-between;
 }
+
+
 
 .hover11 figure img {
 	opacity: 1;
@@ -257,7 +260,7 @@ nav > a:hover {
   }
 
   .my-info__title2 {
-    font-size: 2.6rem;
+    font-size: 2.4rem;
   }
 
   .my-info__title3 {
@@ -272,6 +275,7 @@ nav > a:hover {
     width: 200px;
     height: 200px;
   }
+
 }
 
 @media screen and (max-width: 1000px) {
@@ -291,7 +295,15 @@ nav > a:hover {
   }
 
   .description {
-    font-size: 1.7rem;
+    font-size: 1.2rem;
+  }
+
+  .experience__years{
+    font-size: 1rem;
+  }
+
+  .experience__details{
+    font-size: 1.15rem;
   }
 
   nav {
@@ -316,7 +328,6 @@ nav > a:hover {
 
   .display-proyects{
     flex-direction: column;
-    width: 75%;
     height: auto;
     }
 
@@ -325,13 +336,108 @@ nav > a:hover {
    }
 
    .my-projects__title {
-    padding-left: 5.5rem;
+    padding-left: 4rem;
+    font-size: 1.2rem;
    }
+
+   .additional-info__title{
+    font-size: 1.5rem;
+    margin-top: 2rem;
+   }
+
+   .education__title, .languages > p, .hobbies > p, .course1 > p, .course2 > p{
+    font-size: 1.2rem;
+   }
+
+   .education__place {
+    font-size: 1.1rem;
+   }
+
+   .education__years {
+    font-size: 1rem
+    
+   }
+
+
+
 }
 
-@media screen and (min-width: 721px) and (max-width: 1000px) {
+@media screen and (min-width: 721px) and (max-width: 830px) {
   .avatar {
     width: 250px;
     height: 250px;
   }
+
+  .my-projects__title {
+    padding-left: 1.5rem;
+    font-size: 1.2rem;
+}
+
+.hover11 figure img {
+    width: 500px;
+    height: auto;
+    
+}
+}
+
+@media screen and (min-width: 1020px) and (max-width: 1200px) {
+
+  nav > a {
+    font-size: 1.3rem;
+  }
+  .description {
+    font-size: 1.4rem;
+  }
+
+  .experience__years{
+    font-size: 1.3rem;
+  }
+
+  .experience__details{
+    font-size: 1.5rem;
+  }
+
+  .experience__description{
+    font-size: 1.2rem;
+  }
+
+  .my-projects{
+    width: 85%;
+  }
+
+  .hover11 figure img {
+      width: 280px;
+      height: 131px;
+      
+  }
+
+  .my-projects__title {
+    font-size: 1.4rem;
+   }
+
+  .list > ul > li {
+    font-size: 1.5rem;
+  }
+
+   .education__title, .languages > p, .hobbies > p, .course1 > p, .course2 > p{
+    font-size: 1.5rem;
+   }
+
+   .additional-info__title{
+    font-size: 2rem;
+    margin-top: 2rem;
+   }
+
+   .education__place {
+    font-size: 1.4rem;
+   }
+
+   .education__years {
+    font-size: 1.3rem
+    
+   }
+
+   .additional-info2{
+    margin-left: 2rem;
+   }
 }
